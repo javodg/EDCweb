@@ -18,6 +18,7 @@
     font-size: 14px;
     line-height: 22px;
     color: #000;
+		padding-top: 50px;
   }
 	.bg-primario {
 		background: #67c0d8;
@@ -536,7 +537,6 @@ ul.sub-menu {
 *******Home Page******
 **************************/
 #home-slider {
-  background: url(../images/home/slider-bg.png) 0 100% repeat-x;
   position: relative;
 }
 
@@ -2725,4 +2725,15 @@ span.stButton_gradient,
   -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;
   border-radius: 100%;
   margin: 10px 0;
+}
+.bg-grey {
+	  background-color:  #DEE4E3;
+		border: 0px;
+		margin-bottom: 0px;
+		padding: 25px;
+}
+.bg-blue {
+	  background-color:  #65BFD7;
+		border: 0px;
+		margin-bottom: 0px;
 }

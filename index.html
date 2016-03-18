@@ -14,73 +14,56 @@
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
 	<link rel="shortcut icon" href="images/ico/favicon.ico">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
 </head>
 <!--/head-->
 
 <body>
-	<header id="header">
-		<div class="navbar navbar-inverse" role="banner">
-			<div class="container">
-				<div class="navbar-header pull-right">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div class="row">
-						<div class="col-sm-12 overflow">
-							<div class="pull-right">
-								<div class="collapse navbar-collapse">
-									<ul class="nav navbar-nav navbar-right">
-										<li><a href="#">QUIENES SOMOS</a></li>
-										<li><a href="#">QUE HACEMOS</a></li>
-										<li><a href="#">PORTAFOLIO</a></li>
-										<li><a href="#">HMP</a></li>
-										<li><a href="#">CONTACTO</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+	<nav class="navbar navbar-default navbar-fixed-top" style="background:#DEE4E3">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ENE MEDIOS</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">QUIENES SOMOS</a></li>
+					<li><a href="#">QUE HACEMOS</a></li>
+					<li><a href="#">PORTAFOLIO</a></li>
+					<li><a href="#">HMP</a></li>
+					<li><a href="#">CONTACTO</a></li>
+				</ul>
 			</div>
 		</div>
-	</header>
-	<!--/#header-->
-
-	<section id="home-slider">
-		<div class="container">
+	</nav>
+	<section id="home-slider" class="bg-grey">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="main-slider">
-					<div class="slide-text">
-						<h1>
+				<div class="main-slider row">
+					<div class="slide-text col-sm-4">
+						<h1 style="font-size: 40px;">
 							EMPODEREMOS<BR>
 							NUESTRA<BR>
 							COMUNIDAD
 						</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec odio sed lectus maximus rutrum. Maecenas accumsan mollis eros, eget fringilla nulla lacinia pulvinar. Duis.</p>
-						<a href="#" style="padding : 7px;" class="bg-primary">UNETE AL EQUIPO</a>
+						<a href="#" style="padding : 7px" class="bg-primary">UNETE AL EQUIPO</a>
 					</div>
-					<img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-					<img src="images/home/slider/house.png" class="slider-house" alt="slider image">
-					<img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
-					<img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-					<img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+					<img src="http://loremflickr.com/600/300/working" class="slider-hill col-sm-8" alt="slider image" style="marging-top:20px">
 				</div>
 			</div>
 		</div>
 		<div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
 	</section>
 	<!--/#home-slider-->
-
-	<section id="services">
+	<section id="services" class="bg-blue">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">

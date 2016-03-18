@@ -274,7 +274,8 @@
 
 
   #home-slider {
-    margin: 50px 20px;
+    margin: 0px;
+		padding-top: 10px;
   }
 
   #home-slider .main-slider {

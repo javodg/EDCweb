@@ -536,21 +536,6 @@ ul.sub-menu {
 /*************************
 *******Home Page******
 **************************/
-#home-slider {
-  position: relative;
-}
-
-#home-slider .main-slider {
-  position: relative;
-  height: 450px;
-}
-
-#home-slider .slide-text{
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 450px;
-}
 
 .animate-in .slide-text {
   -webkit-animation: fadeInLeftBig 700ms cubic-bezier(0.190,1.000,0.220,1.000) 200ms both;
@@ -614,7 +599,7 @@ ul.sub-menu {
 
 
 #home-slider h1{
-  margin-top: 100px;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -1467,9 +1452,10 @@ Portfolio Details
 }
 
 .navbar-default li a{
-  font-size: 12px;
+  font-size: 16px;
   padding: 0;
-  padding-right: 15px;
+  padding-right: 10px;
+  padding-top: 15px;
 }
 
 .navbar-default li a i{

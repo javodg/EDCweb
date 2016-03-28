@@ -1,0 +1,103 @@
+<div id="medios">
+    <div class="col-sm-12 t-centrado"><img src="images/icon-1.png" alt=""></div>
+    <div class="col-sm-12 t-centrado">
+        <h3 class="cursiva" data-toggle="modal" data-target="#myModal">Medios</h3>
+    </div>
+    <div class="col-sm-6" id="modal-container-1">
+        arcu, eu condimentum magna nunc scelerisque neque. 
+        Etiam faucibus, ipsum nec suscipit elementum, ex augue tempor orci, in vestibulum dui justo quis lacus. 
+    </div>
+    <div class="col-sm-6"  id="modal-container-2">
+        >Nunc et lacus vitae dui ullamcorper blandit sed eget nisl. Nunc dapibus, elit rhoncus convallis aliquam, 
+        turpis lectus dictum eros, in lacinia orci arcu ac velit. Sed eu tortor interdum massa mollis scelerisque. 
+        Suspenditum sit amet, molestie nec ligula. 
+    </div>
+</div>
+<div id="servicios">
+    <div class="col-sm-12 t-centrado"><img src="images/icon-2.png" alt=""></div>
+    <div class="col-sm-12 t-centrado">
+        <h3 class="cursiva" data-toggle="modal" data-target="#myModal">Servicios</h3>
+    </div>
+    <div class="col-sm-6" id="modal-container-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod odio eget dapibus aliquet. 
+        Aliquam ante mauriementum, ex augue tempor orci, in vestibulum dui justo quis lacus. 
+    </div>
+    <div class="col-sm-6"  id="modal-container-2">
+        >Nunc et lacus vitae dui ullamcorper blandit sed eget nisl. Nunc dapibus, elit rhoncus convallis aliquam, 
+        turpis lectus dictum eros, in lacinia orci arcu ac velit. Sed eu tortor interdum massa mollis scelerisque. 
+        Suspendisse dictum urna eu velit pretium, eu auctor ante fermentum. Pellentesque eu metus dignissim urna 
+        vehicula vestibulum. Nunc turpis tortor, vestibulum id dictum sit amet, molestie nec ligula. 
+    </div>
+</div>
+<div id="herramientas">
+    <div class="col-sm-12 t-centrado"><img src="images/icon-3.png" alt=""></div>
+    <div class="col-sm-12 t-centrado">
+        <h3 class="cursiva" data-toggle="modal" data-target="#myModal">Herramientas</h3>
+    </div>
+    <div class="col-sm-6" id="modal-container-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod odio eget dapibus aliquet. 
+        Aliquam ante mauris, dapibus non sem ut, sagittis iaculis purus. Fusce laoreet libero non maximus convallis. 
+        Nulla lacinia, ex non sollicitudin faucibus, turpis metus tincidunt arcu, eu condimentum magna nunc scelerisque neque. 
+        Etiam faucibus, ipsum nec suscipit elementum, ex augue tempor orci, in vestibulum dui justo quis lacus. 
+    </div>
+    <div class="col-sm-6"  id="modal-container-2">
+        >Nunc et lacus vitae dui ullamcorper blandit sed eget nisl. Nunc dapibus, elit rhoncus convallis aliquam, 
+        turpis lectus dictum eros, in lacinia orci arcu ac velit. Sed eu tortor interdum massa mollis scelerisque. 
+        Suspendisse dictum urna eu velit pretium, eu auctor ante fermentum. Pellentesque eu metus dignissim urna 
+        vehicula vestibulum. Nunc turpis tortor, vestibulum id dictum sit amet, molestie nec ligula. 
+    </div>
+</div>
+<div id="media">
+    <div class="col-sm-12 t-centrado"><img src="images/icon-2.png" alt=""></div>
+    <div class="col-sm-12 t-centrado">
+        <h3 class="cursiva" data-toggle="modal" data-target="#myModal">Media Outlet</h3>
+    </div>
+    <div class="col-sm-6" id="modal-container-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod odio eget dapibus aliquet. 
+        Aliquam ante mauris, dapibus non sem ut, sagittis iaculis purus. Fusce laoreet libero non maximus convallis. 
+        Nulla lacinia, ex non sollicitudin faucibus, turpis metus tincidunt arcu, eu condimentum magna nunc scelerisque neque. 
+        Etiam faucibus, ipsum nec suscipit elementum, ex augue tempor orci, in vestibulum dui justo quis lacus. 
+    </div>
+    <div class="col-sm-6"  id="modal-container-2">
+        >Nunc et lacus vitae dui ullamcorper blandit sed eget nisl. Nunc dapibus, elit rhoncus convallis aliquam, 
+        turpis lectus dictum eros, in lacinia orci arcu ac velit. Sed eu tortor interdum massa mollis scelerisque. 
+        Suspendisse dictum urna eu velit pretium, eu auctor ante fermentum. Pellentesque eu metus dignissim urna 
+        vehicula vestibulum. Nunc turpis tortor, vestibulum id dictum sit amet, molestie nec ligula. 
+    </div>
+</div>
+<div id="enlace">
+    <div class="col-sm-12 t-centrado"><img src="images/icon-3.png" alt=""></div>
+    <div class="col-sm-12 t-centrado">
+        <h3 class="cursiva" data-toggle="modal" data-target="#myModal">Enlace MiPyME</h3>
+    </div>
+    <div class="col-sm-6" id="modal-container-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod odio eget dapibus aliquet. 
+        Aliquam ante mauris, dapibus non sem ut, sagittis iaculis purus. Fusce laoreet libero non maximus convallis. 
+        Nulla lacinia, ex non sollicitudin faucibus, turpis metus tincidunt arcu, eu condimentum magna nunc scelerisque neque. 
+        Etiam faucibus, ipsum nec suscipit elementum, ex augue tempor orci, in vestibulum dui justo quis lacus. 
+    </div>
+    <div class="col-sm-6"  id="modal-container-2">
+        >Nunc et lacus vitae dui ullamcorper blandit sed eget nisl. Nunc dapibus, elit rhoncus convallis aliquam, 
+        turpis lectus dictum eros, in lacinia orci arcu ac velit. Sed eu tortor interdum massa mollis scelerisque. 
+        Suspendisse dictum urna eu velit pretium, eu auctor ante fermentum. Pellentesque eu metus dignissim urna 
+        vehicula vestibulum. Nunc turpis tortor, vestibulum id dictum sit amet, molestie nec ligula. 
+    </div>
+</div>
+<div id="universitario">
+    <div class="col-sm-12 t-centrado"><img src="images/icon-1.png" alt=""></div>
+    <div class="col-sm-12 t-centrado">
+        <h3 class="cursiva" data-toggle="modal" data-target="#myModal">Enlace Universitario</h3>
+    </div>
+    <div class="col-sm-6" id="modal-container-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod odio eget dapibus aliquet. 
+        Aliquam ante mauris, dapibus non sem ut, sagittis iaculis purus. Fusce laoreet libero non maximus convallis. 
+        Nulla lacinia, ex non sollicitudin faucibus, turpis metus tincidunt arcu, eu condimentum magna nunc scelerisque neque. 
+        Etiam faucibus, ipsum nec suscipit elementum, ex augue tempor orci, in vestibulum dui justo quis lacus. 
+    </div>
+    <div class="col-sm-6"  id="modal-container-2">
+        >Nunc et lacus vitae dui ullamcorper blandit sed eget nisl. Nunc dapibus, elit rhoncus convallis aliquam, 
+        turpis lectus dictum eros, in lacinia orci arcu ac velit. Sed eu tortor interdum massa mollis scelerisque. 
+        Suspendisse dictum urna eu velit pretium, eu auctor ante fermentum. Pellentesque eu metus dignissim urna 
+        vehicula vestibulum. Nunc turpis tortor, vestibulum id dictum sit amet, molestie nec ligula. 
+    </div>
+</div>

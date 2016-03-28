@@ -1,0 +1,23 @@
+{
+  "name": "enemedios",
+  "version": "0.0.5",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javodg/enemedios.git"
+  },
+  "author": "Javier Diaz Gaitan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javodg/enemedios/issues"
+  },
+  "homepage": "https://github.com/javodg/enemedios#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1"
+  }
+}

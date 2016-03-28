@@ -1,142 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<!-- Theme Made By www.w3schools.com - No Copyright -->
-	<title>Ene Medios</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<style>
-
-	</style>
+  <title>Ene Medios</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+	
 </head>
+<body id="page-top">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i></button>
-				<a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-play-circle"><span class="light">ENE MEDIOS</a>
-      </div>
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-					<ul class="nav navbar-nav">
+<section id="main6" class="main main6 centrar">
+    <div class="container">
+        <img src="images/logo-animado.gif" class="img-responsive" alt="">
+    </div>
+</section>
 
-							<li class="hidden">
-									<a href="#page-top"></a>
-							</li>
-							<li>
-									<a class="page-scroll" href="#about">QUIENES SOMOS</a>
-							</li>
-							<li>
-									<a class="page-scroll" href="#download">QUE HACEMOS</a>
-							</li>
-							<li>
-									<a class="page-scroll" href="#contact">CONTACTO</a>
-							</li>
-					</ul>
-				</div>
+<!-- menu especial -->
+<section id="main0" class="main main0 centrar">
+	<div class="container">
+			<div class="row centrar">
+					<div class="col-sm-10 main-info">
+							<div class="row" id="modal-container-">
+									<div class="col-sm-12 t-centrado"><img src="images/icon-1.png" alt=""></div>
+									<div class="col-sm-12 t-centrado">
+											<h3 class="cursiva" data-toggle="modal" data-target="#myModal">Medios</h3>
+									</div>
+									<div class="col-sm-6" id="modal-container-1">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod odio eget dapibus aliquet. 
+											Aliquam ante mauris, dapibus non sem ut, sagittis iaculis purus. Fusce laoreet libero non maximus convallis. 
+											Nulla lacinia, ex non sollicitudin faucibus, turpis metus tincidunt arcu, eu condimentum magna nunc scelerisque neque. 
+											Etiam faucibus, ipsum nec suscipit elementum, ex augue tempor orci, in vestibulum dui justo quis lacus. 
+									</div>
+									<div class="col-sm-6"  id="modal-container-2">
+											>Nunc et lacus vitae dui ullamcorper blandit sed eget nisl. Nunc dapibus, elit rhoncus convallis aliquam, 
+											turpis lectus dictum eros, in lacinia orci arcu ac velit. Sed eu tortor interdum massa mollis scelerisque. 
+											Suspendisse dictum urna eu velit pretium, eu auctor ante fermentum. Pellentesque eu metus dignissim urna 
+											vehicula vestibulum. Nunc turpis tortor, vestibulum id dictum sit amet, molestie nec ligula. 
+									</div>
+							</div>
+					</div>
 			</div>
-	</nav>
-    <video autoplay loop class="embed-responsive-item" style="
-            position: absolute; 
-            z-index: 0;
-            min-width: 100%; 
-						min-height : 100%;
-            left: 0px; 
-            bottom:0px;
-            overflow: hidden;" >
-        <source src="images/bg1.mp4" type="video/mp4">
-    </video>
-	<div class="main">
-		<div class="row">
-			<div class="col-sm-8">
-				<a href="index2.html">
-				<h1>EMPODEREMOS<BR>
-					NUESTRA<BR>
-					COMUNIDAD
-				</h1>
-				</a>
-				</BR>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec odio sed lectus maximus rutrum. Maecenas accumsan
-					mollis eros, eget fringilla nulla lacinia pulvinar. Duis.</p>
-				<div class="text-center">
-					<a href="#" style="padding : 7px" class="bg-primary">UNETE AL EQUIPO</a>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+						<div class="row">
+								<div class="col-sm-4">
+										<img src="images/icon-1.png" 
+													alt="Medios" 
+													data-dismiss="modal" 
+													class="main0-icon img-responsive" 
+													onclick="loadmodal('medios')">
+								</div>
+								<div class="col-sm-4">
+										<img src="images/icon-2.png" 
+													alt="Medios" 
+													data-dismiss="modal" 
+													class="main0-icon img-responsive" 
+													onclick="loadmodal('servicios')">
+								</div>
+								<div class="col-sm-4">
+										<img src="images/icon-3.png" 
+													alt="Medios" 
+													data-dismiss="modal" 
+													class="main0-icon img-responsive" 
+													onclick="loadmodal('herramientas')">
+								</div>
+								<div class="col-sm-4">
+										<img src="images/icon-2.png" 
+													alt="Medios" 
+													data-dismiss="modal" 
+													class="main0-icon img-responsive" 
+													onclick="loadmodal('media')">
+								</div>
+								<div class="col-sm-4">
+										<img src="images/icon-3.png" 
+													alt="Medios" 
+													data-dismiss="modal" 
+													class="main0-icon img-responsive" 
+													onclick="loadmodal('enlace')">
+								</div>
+								<div class="col-sm-4">
+										<img src="images/icon-1.png" 
+													alt="Medios" 
+													data-dismiss="modal" 
+													class="main0-icon img-responsive" 
+													onclick="loadmodal('universitario')">
+								</div>
+						</div>           
 				</div>
 			</div>
 		</div>
-	</div>
-  <!-- Plugin JavaScript -->
+	</div> 
+</section>   
+        
+<!-- modal -->
+
+<!-- Button trigger modal -->
+
+
+      
+
+<!-- introduccion -->
+<section id="main1" class="main main1 centrar">
+    <div class="container">
+    <div class="row centrar">
+        <div class="col-sm-5 col-xs-9 main-info">
+            <h2 class="t-centrado">Sabemos cuanto trabajo ha costado tener lo que tienes.</h2>
+            <h4 class="cursiva t-centrado">Queremos ayudarte a crecer y esperamos crecer contigo.</h4>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- primera lamina -->
+<section id="main2" class="main main2">
+</section>
+
+<!-- segunda lamina -->
+<section id="main3" class="main main3">
+</section>
+
+<!-- segunda lamina -->
+<section id="main4" class="main main4">
+</section>
+
+<section id="main5" class="main main5 centrar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3 class="t-centrado">EXPERIENCIA EN MEDIOS LOCALES</h3>
+                <img src="images/moka2.gif" class="img-responsive" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- javascripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-<script>
-	// jQuery to collapse the navbar on scroll
-function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-}
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/main.js"></script>
 
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-  if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
-    $('.navbar-toggle:visible').click();
-  }
-});
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-   
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-
-</script>
 </body>
 </html>

@@ -3,18 +3,22 @@
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 /* cursiva */
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+@import url(https://fonts.googleapis.com/css?family=Amita);
+@import url(https://fonts.googleapis.com/css?family=Eagle+Lake);
+/* valores base de html y body */
 
+/* estop es necesario para presentar los slides a pantalla completa */
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
 	font-family: 'Lato', sans-serif;
-	font-size: 16px;
+	font-size: 20px;
+	line-height: 1.5em
 }
-a, a:hover, a:visited, a:active {
-	text-decoration: none;
-	font: inherit;
-}
+ /* estilos de los slides */
 .main {
     width: 100%;
     height: 100%;
@@ -115,7 +119,10 @@ top: 30%;
 /* fuentes */
 
 .cursiva {
-font-family: 'Covered By Your Grace', cursive;
+font-family: 'Amita', cursive;
+}
+.cursiva2 {
+font-family: 'Eagle Lake', cursive;
 }
 
 @media (min-width: 800px) { 
@@ -124,8 +131,8 @@ font-family: 'Covered By Your Grace', cursive;
     font-weight: bold;
     }
     h2 {
-    font-size: 3.5rem;
-    font-weight: bold;
+    font-size: 3.55rem;
+    font-weight: 700;
     }
     h3 {
     font-size: 2.8rem;
@@ -136,11 +143,11 @@ font-family: 'Covered By Your Grace', cursive;
     font-weight: bold;
     }
     h5 {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: bold;   
     }
     h6 {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
         font-weight: bold;
     }
 }

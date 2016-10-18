@@ -1,2 +1,5 @@
-node_modules/
-gulp.js
+.DS_Store
+bower_components
+node_modules
+npm-debug.log
+css

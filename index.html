@@ -65,9 +65,16 @@
             </div>
         </nav>
         <!-- end navigation -->
+
         <!-- slider -->
         <section id="inicio" class="no-padding">
-            <div class="owl-slider-full owl-carousel owl-theme light-pagination square-pagination dark-pagination-without-next-prev-arrow main-slider">
+            <div class="owl-slider-full
+              owl-carousel
+              owl-theme
+              light-pagination
+              square-pagination
+              dark-pagination-without-next-prev-arrow
+              main-slider">
                 <!-- slider item -->
                 <div class="item owl-bg-img" style="background-image:url('images/bg1.jpg');">
                     <div class="opacity-full bg-dark-gray"></div>
@@ -116,7 +123,26 @@
                     </div>
                 </div>
                 <!-- end slider item -->
-            </div>
+                <!-- slider item -->
+                <!-- TODO Pendiente hacer funcionar el video en el slide, falla el aspecto responsivo ya que en pantallas grandes corta el video/controles -->
+                <!--
+                <div class="item">
+                    <div class="container full-screen position-relative">
+                      <div class="slider-typography text-left">
+                          <div class="slider-text-middle-main md-margin-eleven sm-margin-three xs-margin-thirteen">
+                              <div class="slider-text-middle slider-typography-option1">
+                                <div class="embed-responsive embed-responsive-16by9" style="margin-top:80px;">
+                                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              -->
+                <!-- end slider item -->
+
+              </div>
         </section>
         <!-- end slider -->
 
@@ -124,13 +150,13 @@
         <section id="quienes" class="wow fadeIn">
             <div class="container">
                 <div class="row xs-text-center">
-                    <!-- section title -->
+                    <!-- titulo de seccion -->
                     <div class="col-md-12 col-sm-12">
                         <h2 class="alt-font font-weight-600 title-thick-underline border-color-fast-yellow display-inline-block letter-spacing-2 margin-seven no-margin-lr no-margin-top xs-margin-eleven xs-no-margin-lr xs-no-margin-top">
                           Acerca de Nosotros
                         </h2>
                     </div>
-                    <!-- end section title -->
+                    <!-- fin de titulo de seccion -->
                     <!-- text -->
                     <div class="col-md-5 col-sm-12">
                         <span class="text-extra-large margin-eleven no-margin-lr no-margin-top display-inline-block alt-font black-text xs-margin-eleven xs-no-margin-lr xs-no-margin-top">
@@ -261,6 +287,136 @@
             </div>
         </section>
         <!-- end services section -->
+
+        <!-- Seccion - Galeria --><!-- TODO aqui me quede en modificar -->
+        <section id="galeria" class="no-padding-bottom work-4col wow fadeIn ">
+            <div class="container">
+                <div class="row">
+                    <!-- titulo de seccion -->
+                    <div class="col-lg-5 col-md-12 col-sm-12 md-text-center">
+                        <h2 class="alt-font font-weight-600 title-thick-underline border-color-fast-yellow display-inline-block letter-spacing-2">
+                          Galeria de Productos
+                        </h2>
+                    </div>
+                    <!-- fin de titulo de seccion -->
+                    <div class="col-lg-7 col-md-12 text-right display-inline md-text-center md-margin-five md-no-margin-lr md-no-margin-bottom ">
+                        <!-- filter navigation -->
+                        <ul class="portfolio-filter nav nav-tabs no-border portfolio-filter-tab alt-font text-uppercase letter-spacing-1 margin-seven no-margin-lr no-margin-bottom xs-margin-one-half xs-no-margin-bottom xs-no-margin-lr">
+                            <li class="nav active xs-display-inline "><a href="#" data-filter="*" class="xs-display-inline">Todos</a></li>
+                            <li class="nav xs-display-inline "><a href="#" data-filter=".digitales" class="xs-display-inline">Medios Digitales</a></li>
+                            <li class="nav xs-display-inline "><a href="#" data-filter=".impresos" class="xs-display-inline">Medios Impresos</a></li>
+                            <li class="nav xs-display-inline "><a href="#" data-filter=".otros" class="xs-display-inline">Otros</a></li>
+                        </ul>
+                        <!-- end filter navigation -->
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid margin-thirteen no-margin-bottom no-margin-lr md-margin-five md-no-margin-bottom md-no-margin-lr xs-margin-one-half xs-no-margin-bottom xs-no-margin-lr">
+                <div class="row">
+                    <div class="grid-gallery grid-style1 overflow-hidden">
+                        <div class="tab-content">
+                            <ul class="masonry-items grid">
+                              <!-- portfolio item -->
+                              <li class="digitales">
+                                  <figure>
+                                      <div class="gallery-img">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=1Mi5zsI2qwg"><img src="http://placehold.it/800x800" alt=""></a>
+                                      </div>
+                                      <figcaption>
+                                          <h3 class="alt-font text-uppercase letter-spacing-2 xs-no-padding-lr">Video de Muestra</h3>
+                                          <div class="grid-style1-border"></div>
+                                      </figcaption>
+                                  </figure>
+                              </li>
+                              <!-- end portfolio item -->
+                              <!-- portfolio item -->
+                              <li class="digitales">
+                                  <figure>
+                                      <div class="gallery-img">
+                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=88GDfphANGo"><img src="http://placehold.it/800x800" alt=""></a>
+                                      </div>
+                                      <figcaption>
+                                          <h3 class="alt-font text-uppercase letter-spacing-2 xs-no-padding-lr">2do Video de Muestra</h3>
+                                          <div class="grid-style1-border"></div>
+                                      </figcaption>
+                                  </figure>
+                              </li>
+                              <!-- end portfolio item -->
+                                <!-- portfolio item -->
+                                <li class="impresos">
+                                    <figure>
+                                        <div class="gallery-img">
+                                            <a class="work-details-popup"><img src="http://placehold.it/800x800" alt=""></a>
+                                        </div>
+                                        <figcaption>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2 xs-no-padding-lr">Pagina de proyecto impreso</h3>
+                                            <div class="grid-style1-border"></div>
+                                        </figcaption>
+                                    </figure>
+                                    <!-- details popup -->
+                                    <div class="popup-info">
+                                        <div class="popup-main bg-white">
+                                            <!-- slider item-->
+                                            <div class="owl-slider-full owl-carousel owl-theme light-pagination square-pagination dark-pagination-without-next-prev-arrow main-slider">
+                                                <div class="item padding-thirteen no-padding-lr sm-padding-twenty-nine sm-no-padding-lr xs-padding-seven xs-no-padding-lr half-project-bg owl-bg-img" style="background-image:url('http://placehold.it/1920x750');">
+                                                    <div class="opacity-full bg-dark-gray"></div>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-12 text-center z-index-1 margin-twenty-five no-margin-lr no-margin-bottom xs-margin-nineteen xs-no-margin-bottom xs-no-margin-lr">
+                                                                <div class="slider-typographi-text">
+                                                                    <span class="slider-subtitle alt-font font-weight-100 white-text text-medium letter-spacing-2 text-uppercase">Nombre del proyecto</span>
+                                                                    <span class="alt-font font-weight-600 white-text title-extra-large letter-spacing-2 text-uppercase display-block xs-title-medium">Descripcion rapida</span>
+                                                                    <div class="bg-fast-yellow separator-line-thick-long margin-seven margin-lr-auto xs-margin-eleven xs-margin-lr-auto"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end slider item -->
+                                            <!-- popup text -->
+                                            <section class="no-padding-bottom">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-5 col-sm-10 text-center center-col cursor-default">
+                                                            <span class="title-small letter-spacing-2 text-uppercase alt-font black-text margin-ten no-margin-lr no-margin-top display-block">
+                                                              Descripcion amplia del proyecto
+                                                            </span>
+                                                            <p class="text-medium">
+                                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <!-- end popup text -->
+                                            <section>
+                                                <div class="container">
+                                                    <div>
+                                                        <!-- popup thumb images -->
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-sm-12"><img class="project-img-gallery no-padding-top" alt="" src="http://placehold.it/1240x698"></div>
+                                                            <div class="col-md-12 col-sm-12"><img class="project-img-gallery no-padding-top" alt="" src="http://placehold.it/1240x698"></div>
+                                                            <div class="col-md-12 col-sm-12"><img class="project-img-gallery no-padding-top" alt="" src="http://placehold.it/1240x698"></div>
+                                                            <div class="col-md-12 col-sm-12"><img class="project-img-gallery no-padding-top" alt="" src="http://placehold.it/1240x698"></div>
+                                                            <div class="col-md-12 col-sm-12"><img class="project-img-gallery no-padding-top" alt="" src="http://placehold.it/1240x698"></div>
+                                                        </div>
+                                                        <!-- end popup thumb images -->
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <!-- end details popup -->
+                                </li>
+                                <!-- end portfolio item -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end work section -->
 
         <!-- scroll to top -->
         <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>

@@ -42,7 +42,8 @@ $(document).ready(function () {
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
-        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        video: true
     });
 
     $("#owl-demo-background").owlCarousel({
@@ -161,7 +162,7 @@ $(document).ready(function () {
 /*==============================================================
     set parallax
  ==============================================================*/
-    
+
     SetParallax();
 
     $('.parallax-fix').each(function () {
@@ -258,7 +259,7 @@ $(document).ready(function () {
 /*==============================================================
     zoom gallery
 ==============================================================*/
-    
+
     $('.zoom-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -322,7 +323,7 @@ $(document).ready(function () {
 /*==============================================================
     ajax magnific popup for onepage portfolio
 ==============================================================*/
-    
+
     $('.ajax-popup').magnificPopup({
         type: 'ajax',
         alignTop: true,
@@ -386,7 +387,7 @@ $(document).ready(function () {
 /*==============================================================
     form to email
 ==============================================================*/
-    
+
     $("#success").hide();
     $("#success-contact").hide();
     //restaurant contact form
@@ -789,7 +790,7 @@ $(document).ready(function () {
     }
 
 
-    
+
 
 
     //end ready
@@ -879,6 +880,7 @@ wow.init();
 /*==============================================================
     ajax aagnific popup for onepage portfolio
 ==============================================================*/
+
 
 $('.work-details-popup').on('click', function () {
     $.magnificPopup.open({

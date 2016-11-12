@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Castillo Magico - Salon de eventos infantiles.</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <style media="screen">
+            body,
+            html {
+                height: 100%;
+            }
+            body {
+                margin: 0;
+            }
+            .section {
+                background: url("images/bg3.png");
+                background-size: 27px 36px;
+                background-color: rgba(32, 57, 79, 0.9);
+                text-align: center;
+            }
+            .img-r {
+                width: 75vmin;
+                height: 75vmin;
+            }
+
+        </style>
+        <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css"/>
+    </head>
+    <body>
+        <div id="fullpage">
+            <div class="section " id="section0">
+                <div class="intro">
+                    <a href="index.html" class="flex-item">
+                        <img src="images/CM-logo-M.png" alt="" class="img-r">
+                    </a>
+                </div>
+            </div>
+            <div class="section" id="section1">
+                <div class="intro">
+                    <a href="index.html" class="flex-item">
+                        <img src="images/CM-logo-M.png" alt="" class="img-r">
+                    </a>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <div class="intro">
+                    <a href="index.html" class="flex-item">
+                        <img src="images/CM-logo-M.png" alt="" class="img-r">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--<div id="fullpage">
+            <div class="section" id="section0">
+                <a href="index.html" class="flex-item">
+                    <img src="images/CM-logo-M.png" alt="" class="img-r">
+                </a>
+            </div>
+            <div class="section" id="section1">
+                <div class="intro">
+                    <h1>Keep it simple!</h1>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <div class="intro">
+                    <h1>Keep it simple!</h1>
+                </div>
+            </div>
+        </div>-->
+        <script src="js/jquery-3.1.1.slim.min.js"></script>
+        <script src="js/fullpage/jquery.fullpage.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#fullpage').fullpage({
+                    anchors: [
+                        'firstPage', 'secondPage', '3rdPage'
+                    ],
+                    /*sectionsColor: [
+                        '#DAC500', '#1BBC9B', '#7E8F7C'
+                    ],*/
+                    menu: '#menu',
+                    navigation: true,
+                    navigationPosition: 'right',
+                    navigationTooltips: [
+                        'First page', 'Second page', 'Third and last page'
+                    ],
+                    responsiveWidth: 1100
+                });
+            });
+        </script>
+    </body>
+</html>

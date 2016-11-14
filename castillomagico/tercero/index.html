@@ -11,7 +11,7 @@
                 height: 100%;
             }
             body {
-                background: #16A085;
+
                 color: #fff;
                 transition: all 500ms;
                 will-change: background;
@@ -26,6 +26,15 @@
             .img-r {
                 width: 75vmin;
                 height: 75vmin;
+            }
+            .fp-viewing-primera {
+              background: #16A085;
+            }
+            .fp-viewing-segunda {
+              background: #A08516;
+            }
+            .fp-viewing-tercera {
+              background: #8516A0;
             }
         </style>
         <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullpage.css"/>
@@ -73,35 +82,28 @@
         </div>-->
         <script src="js/jquery-3.1.1.js"></script>
         <script src="js/fullpage/jquery.fullpage.min.js"></script>
+        <script src="js/jquery.color-2.1.2.min.js"></script>
         <script>
             $(document).ready(function () {
                 $('#fullpage').fullpage({
-                    anchors: [
-                        'firstPage', 'secondPage', '3rdPage'
-                    ],
-                    /*sectionsColor: [
-                        '#DAC500', '#1BBC9B', '#7E8F7C'
-                    ],*/
+                    anchors: [ 'primera', 'segunda', 'tercera' ],
+                    /*sectionsColor: [ '#DAC500', '#1BBC9B', '#7E8F7C' ],*/
                     menu: '#menu',
                     navigation: true,
                     navigationPosition: 'right',
                     navigationTooltips: [
-                        'First page', 'Second page', 'Third and last page'
+                        'primera', 'segunda', 'tercera'
                     ],
-                    responsiveWidth: 1100
-                });
-                $(window).on("scroll touchmove", function () {
-                    if ($(document).scrollTop() >= $("#section0").position().top) {
-                        $('body').css('background', $("#section0").attr("data-color"));
-                    };
-                    if ($(document).scrollTop() > $("#section1").position().top) {
-                        $('body').css('background', $("#section1").attr("data-color"))
-                    };
-                    if ($(document).scrollTop() > $("#section2").position().top) {
-                        $('body').css('background', $("#section2").attr("data-color"))
-                    };
+                    /*onLeave: function(index, nextIndex, direction){
+                      var x = nextIndex;
+                      console.log(x)
+                      if(x=1) $('body').animate({backgroundColor: "#DAC500"}, 500 );
+                      else if(x=2) $('body').animate({backgroundColor: "#1BBC9B"}, 500 );
+                      else if(x=3) $('body').animate({backgroundColor: "#7E8F7C"}, 500 );
+                    }*/
                 });
             });
         </script>
+
     </body>
 </html>

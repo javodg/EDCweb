@@ -11,39 +11,42 @@
                 height: 100%;
             }
             body {
+                background: #16A085;
+                color: #fff;
+                transition: all 500ms;
+                will-change: background;
                 margin: 0;
             }
             .section {
                 background: url("images/bg3.png");
                 background-size: 27px 36px;
-                background-color: rgba(32, 57, 79, 0.9);
+                /*background-color: rgba(32, 57, 79, 0.9);*/
                 text-align: center;
             }
             .img-r {
                 width: 75vmin;
                 height: 75vmin;
             }
-
         </style>
         <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullpage.css"/>
     </head>
     <body>
         <div id="fullpage">
-            <div class="section " id="section0">
+            <div class="section " id="section0" data-color="#16A085">
                 <div class="intro">
                     <a href="index.html" class="flex-item">
                         <img src="images/CM-logo-M.png" alt="" class="img-r">
                     </a>
                 </div>
             </div>
-            <div class="section" id="section1">
+            <div class="section" id="section1" data-color="#A08516">
                 <div class="intro">
                     <a href="index.html" class="flex-item">
                         <img src="images/CM-logo-M.png" alt="" class="img-r">
                     </a>
                 </div>
             </div>
-            <div class="section" id="section2">
+            <div class="section" id="section2" data-color="#8516A0">
                 <div class="intro">
                     <a href="index.html" class="flex-item">
                         <img src="images/CM-logo-M.png" alt="" class="img-r">
@@ -68,7 +71,7 @@
                 </div>
             </div>
         </div>-->
-        <script src="js/jquery-3.1.1.slim.min.js"></script>
+        <script src="js/jquery-3.1.1.js"></script>
         <script src="js/fullpage/jquery.fullpage.min.js"></script>
         <script>
             $(document).ready(function () {
@@ -86,6 +89,17 @@
                         'First page', 'Second page', 'Third and last page'
                     ],
                     responsiveWidth: 1100
+                });
+                $(window).on("scroll touchmove", function () {
+                    if ($(document).scrollTop() >= $("#section0").position().top) {
+                        $('body').css('background', $("#section0").attr("data-color"));
+                    };
+                    if ($(document).scrollTop() > $("#section1").position().top) {
+                        $('body').css('background', $("#section1").attr("data-color"))
+                    };
+                    if ($(document).scrollTop() > $("#section2").position().top) {
+                        $('body').css('background', $("#section2").attr("data-color"))
+                    };
                 });
             });
         </script>

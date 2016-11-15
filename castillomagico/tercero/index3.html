@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullpage.css"/>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-top clearfix">
+                <h1 class="l-left">
+                    <a href="#firstSection">
+                      <img src="images/logo-b.png" class="logo-menu" alt="">
+                    </a>
+                </h1>
+                <a class="l-right toggle-menu" href="#">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+            <nav class="hide">
+                <ul id="menu">
+                    <li data-menuanchor="firstSection">
+                        <a href="#firstSection" title="First Section">Inicio</a>
+                    </li>
+                    <li data-menuanchor="secondSection">
+                        <a href="#secondSection" title="Second Section">Servicio</a>
+                    </li>
+                    <li data-menuanchor="thirdSection">
+                        <a href="#thirdSection" title="Second Section">Shows</a>
+                    </li>
+                    <li data-menuanchor="fourthSection">
+                        <a href="#fourthSection" title="Fourth Section">Instalaciones</a>
+                    </li>
+                    <li data-menuanchor="fifthSection">
+                        <a href="#fifthSection" title="First Slide">Blog</a>
+                    </li>
+                    <li data-menuanchor="fifthSection/1">
+                        <a href="#fifthSection/1" title="Second Slide">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="fullpage">
+            <section class="vertical-scrolling">
+              Inicio
+              <div class="intro">
+                  <a href="index.html" class="flex-item">
+                      <img src="images/CM-logo-M.png" alt="" class="img-r">
+                  </a>
+              </div>
+            </section>
+            <section class="vertical-scrolling">
+              Servicios
+              <div class="intro">
+                  <a href="index.html" class="flex-item">
+                      <img src="images/CM-logo-M.png" alt="" class="img-r">
+                  </a>
+              </div>
+            </section>
+            <section class="vertical-scrolling">
+              Shows
+              <div class="intro">
+                  <a href="index.html" class="flex-item">
+                      <img src="images/CM-logo-M.png" alt="" class="img-r">
+                  </a>
+              </div>
+            </section>
+            <section class="vertical-scrolling">
+              Instalaciones
+              <div class="intro">
+                  <a href="index.html" class="flex-item">
+                      <img src="images/CM-logo-M.png" alt="" class="img-r">
+                  </a>
+              </div>
+            </section>
+            <section class="vertical-scrolling">
+              Contacto
+              <div class="intro">
+                  <a href="index.html" class="flex-item">
+                      <img src="images/CM-logo-M.png" alt="" class="img-r">
+                  </a>
+              </div>
+            </section>
+        </div>
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/fullpage/jquery.fullpage.min.js"></script>
+        <script type="text/javascript">
+            // variables
+            var $header_top = $('.header-top');
+            var $nav = $('nav');
+            // toggle menu
+            $header_top.find('a').on('click', function () {
+                $(this).parent().toggleClass('open-menu');
+            });
+            // hide menu when clicking outside the menu
+            $("html").click(function (e) {
+                if (!$(e.target).closest('header').length) {
+                    $header_top.removeClass('open-menu');
+                }
+            });
+            // hide menu when clicking on the menu items or the logo
+            $('h1, #menu li a').click(function () {
+                $header_top.removeClass('open-menu');
+            });
+            // fullpage customization
+            $('#fullpage').fullpage({
+                sectionSelector: '.vertical-scrolling',
+                slideSelector: '.horizontal-scrolling',
+                navigation: true,
+                slidesNavigation: true,
+                controlArrows: false,
+                anchors: [
+                    'index',
+                    'servicios',
+                    'shows',
+                    'instalaciones',
+                    'contacto'
+                ],
+                navigationTooltips: [
+                    'Inicio',
+                    'Servicios',
+                    'Shows',
+                    'Instalaciones',
+                    'Contacto'
+                ],
+                menu: '#menu',
+                afterLoad: function (anchorLink, index) {
+                    $header_top.css('background', 'rgba(0, 47, 77, .8)');
+                    $nav.css('background', 'rgba(0, 47, 77, .8)');
+                    if (index == 5) {
+                        $('#fp-nav').hide();
+                        $.fn.fullpage.moveTo(5, 0);
+                    }
+                },
+                onLeave: function (index, nextIndex, direction) {
+                    if (index == 5) {
+                        $('#fp-nav').show();
+                    }
+                },
+                afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+                    if (anchorLink == 'fifthSection' && slideIndex == 1) {
+                        $.fn.fullpage.setAllowScrolling(false, 'up');
+                        $header_top.css('background', 'transparent');
+                        $nav.css('background', 'transparent');
+                        $(this).css('background', '#374140');
+                        $(this).find('h2').css('color', 'white');
+                        $(this).find('h3').css('color', 'white');
+                        $(this).find('p').css({'color': '#DC3522', 'opacity': 1, 'transform': 'translateY(0)'});
+                    }
+                },
+                onSlideLeave: function (anchorLink, index, slideIndex, direction) {
+                    if (anchorLink == 'fifthSection' && slideIndex == 1) {
+                        $.fn.fullpage.setAllowScrolling(true, 'up');
+                        $header_top.css('background', 'rgba(0, 47, 77, .8)');
+                        $nav.css('background', 'rgba(0, 47, 77, .8)');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

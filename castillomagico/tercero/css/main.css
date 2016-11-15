@@ -67,7 +67,10 @@
 .l-left {
     float: left;
 }
-
+.centrar {
+  justify-content: center;
+  text-align: center;
+}
 .l-right {
     float: right;
 }
@@ -124,7 +127,7 @@ ul, li {
 
 .header-top {
     background: rgba(0, 47, 77, .3);
-    height: 70px;
+    height: 50px;
     padding: 0 10px;
     position: fixed;
     top: 0;
@@ -144,11 +147,11 @@ h1 a {
 }
 
 .toggle-menu {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     position: relative;
-    top: 10px;
+    top: 5px;
 }
 
 .toggle-menu i {
@@ -163,19 +166,19 @@ h1 a {
 }
 
 .toggle-menu i:nth-child(1) {
-    top: 16px;
+    top: 11px;
 }
 
 .toggle-menu i:nth-child(2) {
-    top: 24px;
+    top: 19px;
 }
 
 .toggle-menu i:nth-child(3) {
-    top: 32px;
+    top: 27px;
 }
 
 .open-menu i:nth-child(1) {
-    top: 25px;
+    top: 20px;
     -webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
 }
@@ -185,7 +188,7 @@ h1 a {
 }
 
 .open-menu i:nth-child(3) {
-    top: 25px;
+    top: 20px;
     -webkit-transform: rotateZ(-45deg);
     transform: rotateZ(-45deg);
 }
@@ -358,7 +361,7 @@ h3 {
 }
 
 .logo-menu {
-    padding-top: 10px;
-    width: 50px;
+    padding-top: 5px;
+    width: 40px;
     height: auto;
 }

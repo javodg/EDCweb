@@ -344,6 +344,11 @@ h3 {
     background: #FFB12A;
 }
 
+.fp-viewing-servicios > header > .header-top{
+    background: #FFB12A !important;
+}
+
+
 .fp-viewing-shows {
     background: #00ADE5;
 }
@@ -389,6 +394,9 @@ h3 {
   font-weight: bold;
   text-align: left;
 }
+.mini {
+  font-size: 1em;
+}
 
 .btn {
   display: inline-block;
@@ -404,4 +412,18 @@ h3 {
 .btn:hover {
   background: #3cb0fd;
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  header {
+    margin-top: 35px;
+  }
+}
+
+.bg-patron {
+  background: url(../images/bgpatron.png) no-repeat center / cover;
+}
+
+.fp-table {
+  vertical-align: middle:
 }

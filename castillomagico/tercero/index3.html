@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="/css/reset.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css" media="screen" title="no title">
         <link rel="stylesheet" href="css/flexboxgrid.css" media="screen" title="no title">
         <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullpage.css"/>
@@ -20,51 +21,57 @@
                     <i></i>
                 </a>
             </div>
+            <div class="menufullpage centrar">
+              <div class="menuitem">Menu</div>
+            </div>
         </header>
         <div id="fullpage">
             <section class="vertical-scrolling bg-patron">
                 <div class="row row-center">
                     <div class="col-large-5 col-medium-5 col-small-12 col-middle">
                         <div class="content">
-                          <p class="titulo1">Celebremos la magia <br/> de la infancia</p>
-                          <p class="texto1">We worry about what a child will become tomorrow, <br/>
-                          yet we forget that he is someone today.</p>
-
+                            <h1 class="t-blanco titulo1">Celebremos la magia de la infancia</h1>
+                            <p class="texto1">We worry about what a child will become tomorrow,
+                                <br/>
+                                yet we forget that he is someone today.</p>
                             <div class="btn">
-                              <i class="fa fa-angle-right" aria-hidden="true" style="color:#F9C604"></i> PLAY
+                                <i class="fa fa-angle-right" aria-hidden="true" style="color:#F9C604"></i>
+                                PLAY
                             </div>
-
                         </div>
                     </div>
                     <div class="col-large-5 col-medium-5 col-small-12 col-bottom">
                         <div class="content">
-                        <img src="images/kids.png" alt="" style="height:85vh">
-                      </div>
+                            <img src="images/kids.png" alt="" style="height:85vh">
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="vertical-scrolling bg-patron">
-              <div class="row row-center">
-                  <div class="col-large-5 col-medium-5 col-small-12 col-middle">
-                      <div class="content">
-                        <p class="titulo1">Tenemos todo para <br/> armar la fiesta</p>
-                        <p class="texto1">
-                          We worry about what a child will become tomorrow, <br/>
-                          yet we forget that he is someone today. Children are <br/>
-                          not things to be molded, but are people to be unfolded.
-                        </p>
-                          <div class="btn">
-                            <i class="fa fa-angle-right" aria-hidden="true" style="color:#F9C604"></i> Servicios
-                          </div>
-                          <p class="texto1 mini">Checa nuestros paquetes</p>
-                      </div>
-                  </div>
-                  <div class="col-large-5 col-medium-5 col-small-12 col-middle">
-                      <div class="content">
-                      <img src="images/dog.png" alt="" style="height:85vh">
+                <div class="row row-center">
+                    <div class="col-large-5 col-medium-5 col-small-12 col-middle">
+                        <div class="content">
+                            <h1 class="t-blanco titulo1">Tenemos todo para armar la fiesta</h1>
+                            <p class="texto1">
+                                We worry about what a child will become tomorrow,
+                                <br/>
+                                yet we forget that he is someone today. Children are
+                                <br/>
+                                not things to be molded, but are people to be unfolded.
+                            </p>
+                            <div class="btn">
+                                <i class="fa fa-angle-right" aria-hidden="true" style="color:#F9C604"></i>
+                                Servicios
+                            </div>
+                            <p class="texto1 mini">Checa nuestros paquetes</p>
+                        </div>
                     </div>
-                  </div>
-              </div>
+                    <div class="col-large-5 col-medium-5 col-small-12 col-middle">
+                        <div class="content">
+                            <img src="images/dog.png" alt="" style="height:85vh">
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="vertical-scrolling">
                 Shows
@@ -92,14 +99,19 @@
             </section>
         </div>
         <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/flowtype.js"></script>
         <script src="js/fullpage/jquery.fullpage.min.js"></script>
         <script type="text/javascript">
+
+        // Tipografia
+            $('.titulo1').flowtype({minimum: 500, maximum: 2000, minFont   : 16, fontRatio : 12});
             // variables
             var $header_top = $('.header-top');
-            var $nav = $('nav');
+            var $nav = $('.menufullpage')
             // toggle menu
             $header_top.find('a').on('click', function () {
                 $(this).parent().toggleClass('open-menu');
+                $('.menufullpage').toggleClass('open');
             });
             // hide menu when clicking outside the menu
             $("html").click(function (e) {

@@ -76,6 +76,15 @@
 .l-right {
     float: right;
 }
+.img-titulo {
+  background: url('../images/logo-h-1.png') no-repeat center / cover;
+  height: 5vh;
+  position: relative;
+  top: 0.5vh;
+  width: 40vh;
+  margin: 0 auto;
+  display: inline-block;
+}
 
 .end {
     margin-top: 30px;
@@ -189,7 +198,9 @@ ul, li {
     -webkit-transform: rotateZ(-45deg);
     transform: rotateZ(-45deg);
 }
-
+.btn-slide {
+  margin-top: 10vh !important;
+}
 .menufullpage {
   position: fixed;
   overflow: hidden;
@@ -210,6 +221,7 @@ right: 0;
 .menufullpage > .menuitem {
   display: block;
 }
+
 /* SECTION STYLES - fullPage.js
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -303,7 +315,9 @@ h3 {
 .fp-viewing-shows {
     background: #00ADE5;
 }
-
+.fp-viewing-shows>header>.header-top {
+    background: #FFCB28 !important;
+}
 .fp-viewing-instalaciones {
     background: #00B63E;
 }

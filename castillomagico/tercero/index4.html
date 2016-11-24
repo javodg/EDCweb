@@ -10,33 +10,57 @@
         <link rel="stylesheet" href="css/flexboxgrid.css" media="screen" title="no title">
         <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullpage.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/menu.css" media="screen" title="no title">
     </head>
     <body>
-        <header>
-            <div class="header-top clearfix centrar">
-                <a href="#firstSection" class="l-left">
-                    <img src="images/logo-b.png" class="logo-menu" alt="">
-                </a>
-                <div class="img-titulo"></div>
-                <a class="l-right toggle-menu" href="#">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </a>
-            </div>
-            <div class="menufullpage centrar">
 
-              <nav>
-                <ul>
-                  <li><a class="index-link" href="">Inicio</a></li>
-                  <li><a class="servicios-link" href="">Servicios</a></li>
-                  <li><a class="shows-link" href="">Shows</a></li>
-                  <li><a class="instalaciones-link" href="">Instalaciones</a></li>
-                  <li><a class="contacto-link" href="">Contacto</a></li>
+        <div class="header-top clearfix centrar">
+          <div class="menu-animation-wrapper">
+              <div class="menu-animated-background"></div>
+          </div>
+            <a href="#firstSection" class="l-left">
+                <img src="images/logo-b.png" class="logo-menu" alt="">
+            </a>
+            <div class="img-titulo"></div>
+            <a href="#" class="menu l-right toggle-menu">
+                <span class="menu-icon-line-1 menu-icon-line"></span>
+                <span class="menu-icon-line-2 menu-icon-line"></span>
+                <span class="menu-icon-line-3 menu-icon-line"></span>
+            </a>
+        </div>
+        <div class="nav js-nav">
+            <div class="nav-content">
+                <div class="js-nav-header nav-header">
+
+                      <img src="images/logo-b.png" class="logo-big nav-header-text" alt="">
+                    <div class="nav-header-line js-nav-header-line"></div>
+                </div>
+                <ul class="nav-categories">
+                    <li class="nav-category js-nav-animate">
+                        <a href="#index" class="nav-link link_interno">Inicio</a>
+                    </li>
+                    <li class="nav-category js-nav-animate">
+                        <a href="#servicios" class="nav-link link_interno">Servicios</a>
+                    </li>
+                    <li class="nav-category js-nav-animate">
+                        <a href="#shows" class="nav-link link_interno">Shows</a>
+                    </li>
+                    <li class="nav-category js-nav-animate">
+                        <a href="#instalaciones" class="nav-link link_interno">Instalaciones</a>
+                    </li>
+                    <li class="nav-category js-nav-animate">
+                        <a href="#contacto" class="nav-link link_interno">Contactanos</a>
+                    </li>
                 </ul>
-              </nav>
+                <!--<div class="nav-sublinks js-nav-animate">
+                    <div class="js-nav-animate">
+                        <a class="nav-link nav-sublink" href="/speaking/">Speaking</a>
+                        <a class="nav-link nav-sublink" href="/typesource/">TypeSource</a>
+                        <a class="nav-link nav-sublink" href="/spinkit/">SpinKit</a>
+                    </div>
+                </div>-->
             </div>
-        </header>
+        </div>
         <div id="fullpage">
             <section class="vertical-scrolling bg-patron index-slide">
                 <div class="row row-center">
@@ -130,12 +154,18 @@
                 </div>
             </section>
             <section class="vertical-scrolling bg-patron contacto-slide">
-                Pendiente
+              <div class="flex-container">
+                <div class="flex-item">Form de contacto</div>
+                <div class="flex-item">Datos de contacto</div>
+                <div class="flex-item">Mapa</div>
+              </div>
             </section>
         </div>
         <script src="js/jquery-3.1.1.js"></script>
         <script src="js/flowtype.js"></script>
         <script src="js/fullpage/jquery.fullpage.min.js"></script>
+        <script src="js/animate.min.js" charset="utf-8"></script>
+        <script src="js/menu.js" charset="utf-8"></script>
         <script type="text/javascript">
             // Declaracion de var para animacion
             var $index_anim = $('.index-slide .is-animated'),

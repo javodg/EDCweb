@@ -155,6 +155,12 @@ ul, li {
     height: 5vh;
 }
 
+.logo-big {
+  padding-top: 5px;
+  width: auto;
+  height: 15vh;
+}
+
 .toggle-menu {
     width: 5vh;
     height: 5vh;
@@ -210,21 +216,117 @@ ul, li {
     position: fixed;
     overflow: hidden;
     right: 0;
-    height: 0vh;
     width: 100%;
     z-index: 13;
     top: 7vh;
     -webkit-transition: all .3s;
     transition: all .3s;
-    opacity: 0.8;
+    opacity: 0;
+    display: flex;
+    align-items: center
 }
 
 .menufullpage.open {
     height: 93vh;
+    opacity: 1;
+    background-color: #00ACB9;
 }
 
-.menufullpage>.menuitem {
+
+/*  estilos del menu */
+
+nav {
+    float: none;
+    clear: both;
+    width: 30%;
+    margin: 10% auto;
+    background: #eee;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    float: none;
+    width: 100%;
+}
+
+nav li a {
     display: block;
+    width: 100%;
+    padding: 20px;
+    border-left: 5px solid;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: #444;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+nav li a:hover {
+    border-bottom: 0px;
+    color: #fff;
+}
+
+nav li a.index-link {
+    border-left: 10px solid #00ACB9;
+}
+
+nav li a.servicios-link {
+    border-left: 10px solid #FFB12A;
+}
+
+nav li a.shows-link {
+    border-left: 10px solid #00ADE5;
+}
+
+nav li a.instalaciones-link {
+    border-left: 10px solid #00B63E;
+}
+
+nav li a.contacto-link {
+    border-left: 10px solid #8516A0;
+}
+
+nav li a:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0px;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+
+nav li a:hover:after {
+    width: 100%;
+}
+
+nav li a.index-link:after {
+    background: #00ACB9;
+}
+
+nav li a.servicios-link:after {
+    background: #FFB12A;
+}
+
+nav li a.shows-link:after {
+    background: #00ADE5;
+}
+
+nav li a.instalaciones-link:after {
+    background: #00B63E;
+}
+
+nav li a.contacto-link:after {
+    background: #8516A0;
 }
 
 
@@ -302,11 +404,12 @@ h3 {
     }
 }
 
+
 .fp-viewing-index {
     background: #00ACB9;
 }
 
-.fp-viewing-index>header>.header-top {
+.fp-viewing-index>.header-top, .fp-viewing-index .menu-animated-background, .fp-viewing-index .nav-active {
     background: #FFB12A !important;
 }
 
@@ -314,11 +417,11 @@ h3 {
     background: #FFB12A;
 }
 
-.fp-viewing-servicios>header>.header-top {
+.fp-viewing-servicios>.header-top, .fp-viewing-servicios .menu-animated-background, .fp-viewing-servicios .nav-active  {
     background: #000727 !important;
 }
 
-.fp-viewing-servicios>header>.header-top>.img-titulo {
+.fp-viewing-servicios .img-titulo {
     background: url('../images/logo-h-1.png') no-repeat center / cover;
 }
 
@@ -326,7 +429,7 @@ h3 {
     background: #00ADE5;
 }
 
-.fp-viewing-shows>header>.header-top {
+.fp-viewing-shows>.header-top, .fp-viewing-shows .menu-animated-background, .fp-viewing-shows .nav-active {
     background: #FFCB28 !important;
 }
 
@@ -334,16 +437,20 @@ h3 {
     background: #00B63E;
 }
 
-.fp-viewing-instalaciones>header>.header-top {
+.fp-viewing-instalaciones>.header-top, .fp-viewing-instalaciones .menu-animated-background, .fp-viewing-instalaciones .nav-active {
     background: #000727 !important;
 }
 
-.fp-viewing-instalaciones>header>.header-top>.img-titulo {
+.fp-viewing-instalaciones .img-titulo {
     background: url('../images/logo-h-1.png') no-repeat center / cover;
 }
 
 .fp-viewing-blog {
     background: #8516A0;
+}
+
+.fp-viewing-contacto>.header-top, .fp-viewing-contacto .menu-animated-background, .fp-viewing-contacto .nav-active {
+    background: #FFCB28 !important;
 }
 
 .fp-viewing-contacto {
@@ -427,4 +534,28 @@ h3 {
     .index-slide>.fp-tableCell, .shows-slide>.fp-tableCell {
         vertical-align: middle !important;
     }
+}
+/* Estilos por eliminar, solo de ayuda durante el desarrollo */
+.contacto-slide {
+  padding: 5vh;
+}
+.contacto-slide>div:first-child {
+background-color: rgba(0, 0, 255, 0.2);
+
+}
+.flex-container {
+background-color: rgba(255, 0, 0, 0.5);
+display: flex;
+justify-content: space-around;
+align-items: stretch;
+}
+.flex-item {
+background-color: rgba(0, 255, 0, 0.5);
+margin: 20px;
+flex-basis: 20%;
+flex-grow: 1;
+}
+.flex-item:first-child, .flex-item:last-child {
+  height: 80vh;
+  flex-basis: 40%
 }

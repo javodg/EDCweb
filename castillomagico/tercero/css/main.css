@@ -554,6 +554,7 @@ background-color: rgba(0, 255, 0, 0.5);
 margin: 20px;
 flex-basis: 20%;
 flex-grow: 1;
+text-align: left;
 }
 .flex-item:first-child, .flex-item:last-child {
   height: 80vh;

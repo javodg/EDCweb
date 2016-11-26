@@ -1,40 +1,79 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+.form {}
 
-.form {
-
-}
-#form-div {
-    background-color: rgba(72, 72, 72, 0.4);
-    padding-left: 2vh;
-    padding-right: 2vh;
-    padding-top: 2vh;
-    padding-bottom: 3vh;
-    width: 90%; /* fallback if needed */
-    width: calc(100% - 4vh);
-    border-radius: 2vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-direction: column;
+  .form-div {
+      background-color: rgba(72, 72, 72, 0.4);
+      padding-left: 2vh;
+      padding-right: 2vh;
+      padding-top: 2vh;
+      padding-bottom: 3vh;
+      width: 90%;
+      /* fallback if needed */
+      width: calc(100% - 4vh);
+      border-radius: 2vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-direction: column;
       height: 76vh;
-}
+  }
+  .mapa-div {
+      background-color: rgba(72, 72, 72, 0.4);
+      padding-left: 2vh;
+      padding-right: 2vh;
+      padding-top: 2vh;
+      padding-bottom: 3vh;
+      width: 90%;
+      /* fallback if needed */
+      width: calc(100% - 4vh);
+      border-radius: 2vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-direction: column;
+      height: 76vh;
+  }
+  .datos-div {
+      background-color: rgba(72, 72, 72, 0.4);
+      padding-left: 2vh;
+      padding-right: 2vh;
+      padding-top: 2vh;
+      padding-bottom: 3vh;
+      width: 90%;
+      /* fallback if needed */
+      width: calc(100% - 4vh);
+      border-radius: 2vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-direction: column;
+      height: 76vh;
+  }
+  .mapa-div .mapa {
+    background-image: url('../images/mapa.png');
+    height: 100%;
+    width: auto;
+  }
+
 #form-div input {
-  flex-basis: 7vh;
-  text-align: left;
+    flex-basis: 7vh;
+    text-align: left;
 }
 
- .feedback-input {
-   flex-basis: 50%;
-     width: 100%;
-     resize: vertical;
- }
+.feedback-input {
+    width: 100%;
+    resize: vertical;
+}
+
 #form-div input:last-child {
-  flex-basis: 7vh;
-  text-align: center;
-  align-items: center;
+
+    flex-basis: 7vh;
+    text-align: center;
+    align-items: center;
 }
-
-
+ #comment {
+   flex-basis: 50%;
+ }
 .feedback-input {
     color: #3c3c3c;
     font-family: Helvetica, Arial, sans-serif;
@@ -106,27 +145,22 @@
     background-repeat: no-repeat;
 }
 
-
-
 input:hover, textarea:hover, input:focus, textarea:focus {
     background-color: white;
 }
 
 #button-blue {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    float: left;
-    width: 100%;
+
     border: #fbfbfb solid 4px;
     cursor: pointer;
     background-color: #3498db;
     color: white;
-    font-size: 24px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    -webkit-transition: all 0.3s;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    margin-top: -4px;
+    margin-top: -1vh;
     font-weight: 700;
 }
 

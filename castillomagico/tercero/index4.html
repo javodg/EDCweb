@@ -113,10 +113,10 @@
                                 We worry about what a child will become tomorrow, yet we forget that he is someone today.
                             </p>
                             <div class="is-animated">
-                                <div class="btn btn-slide">
+                                <a href="show.html" class="btn btn-slide">
                                     <i class="fa fa-plus" aria-hidden="true" style="color:#F9C604"></i>
                                     Shows
-                                </div>
+                                </a>
                                 <p class="texto1 mini" style="text-align:center;">Shows y animadoress</p>
                             </div>
                         </div>
@@ -155,25 +155,21 @@
             <section class="vertical-scrolling bg-patron contacto-slide">
                 <div class="flex-container">
                     <div class="flex-item">
-                      <form class="form" id="form1">
-                            <div id="form-div">
-
-                                        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name"/>
-
-
-                                        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email"/>
-
-
-                                        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-
-                                        <input type="submit" value="SEND" id="button-blue"/>
-
-
+                        <form class="form" id="form1">
+                            <div class="form-div">
+                                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nombre" id="name"/>
+                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email"/>
+                                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comentarios"></textarea>
+                                <input type="submit" value="ENVIAR" id="button-blue"/>
                             </div>
-                          </form>
+                        </form>
                     </div>
-                    <div class="flex-item">Datos de contacto</div>
-                    <div class="flex-item">Mapa</div>
+                    <div class="flex-item"><div class="datos-div">Datos de Contacto</div></div>
+                    <div class="flex-item">
+                      <div class="mapa-div">
+                        <div class="mapa"></div>
+                      </div>
+                    </div>
                 </div>
             </section>
         </div>

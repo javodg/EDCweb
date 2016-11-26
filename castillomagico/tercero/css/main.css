@@ -540,17 +540,15 @@ margin: -1vh 0 0 -1vh;
   padding: 5vh;
 }
 .contacto-slide>div:first-child {
-background-color: rgba(0, 0, 255, 0.2);
 
 }
 .flex-container {
-background-color: rgba(255, 0, 0, 0.5);
 display: flex;
 justify-content: space-around;
 align-items: stretch;
 }
 .flex-item {
-margin: 20px;
+margin: 1vh;
 flex-basis: 20%;
 flex-grow: 1;
 text-align: left;
